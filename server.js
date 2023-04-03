@@ -30,6 +30,9 @@ app.use(cors({
 
 }))
 
+app.get("/", function( req, res) {
+    res.send({message:"Welcome to Diary Manager App"})
+})
 ////// Query Params 
 
 let authenticate = (req, res, next) => {
