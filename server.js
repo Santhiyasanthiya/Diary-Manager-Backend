@@ -24,14 +24,11 @@ let users = [];
 // midleware
 app.use(express.json());
 app.use(cors({
-    origin: "*", 
-    credentials:true
-
-
+    origin: "*"
 }))
 
 app.get("/", function( req, res) {
-    res.send({message:"Welcome to Diary Manager App"})
+    res.json({message:"Welcome to Diary Manager App"})
 })
 ////// Query Params 
 
